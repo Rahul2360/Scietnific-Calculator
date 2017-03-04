@@ -15,6 +15,7 @@ body {
     outline: none;
     letter-spacing: 4px;
     position: relative;  
+    text-align: right;
 }
 .style {
     font-family: 'Roboto', sans-serif;
