@@ -20,10 +20,10 @@ body {
 #result:hover {
     cursor: pointer;
 }
-.style {
+.style, .style2 {
     font-family: 'Roboto', sans-serif;
 }
-button {
+button , .button{
     background-color: #434967;
     position: relative;
     top: 100px;
@@ -31,15 +31,20 @@ button {
     display: inline-block;
     margin: 10 10;
     -webkit-border-radius: 10px;  
-    -webkit-box-shadow: 
-        0px 8px #A0A2A9; /* shadow */
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
     padding: 0px;
     outline: none;
     border: 0px;
 } 
-button span {
-    background-color: #A0A2A9;
+button {
+    -webkit-box-shadow: 
+        0px 8px #A0A2A9; /* shadow */
+}
+.button {
+    -webkit-box-shadow: 
+        0px 8px #FC3939; /* shadow */
+}
+button span , .button .span{
     -webkit-box-shadow:
             0px -1px #fff, /* top highlight */
             0px 1px 1px #FFFFFF; /* bottom edge */
@@ -53,23 +58,32 @@ button span {
     font-size: 30px;
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
-button span:hover {
+button span {
+    background-color: #A0A2A9;
+}
+.button .span {
+    background-color: #FC3939;
+}
+button span:hover, .button .span:hover {
     color: #000000;
     text-shadow: 0px -1px #000000;
     cursor: pointer;
 }
-button:active, {
+button:active {
     -webkit-box-shadow: 
         0px 8px #A0A2A9; /* shadow */
 }
-button:active span{
+.button:active {
+    -webkit-box-shadow: 
+        0px 8px #FC3939; /* shadow */
+}
+button:active span, .button:active .span{
     -webkit-transform: translate(0, 5px); /* depth of button press */
 }
-button span:after {
+button span:after , .button .span:after{
     display: block;    
     position: relative;  
     font-weight: 700;
     color: #FFFFFF;
-    text-shadow: 0px 1px #fff, 0px -1px #97A63A;
     font-size: 24px;
 }
