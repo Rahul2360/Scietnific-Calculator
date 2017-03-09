@@ -3,14 +3,13 @@ body {
     background-color: #434967;
 }
 #result {
-    top: 100px;
+    margin: 0 auto;
     display: block;
     width: 445px;
     height: 50px;
     color: black;
     font-weight: 700;
     font-size: 30px;
-    margin-left: 410px;
     background: #F5F5F5;
     outline: none;
     letter-spacing: 4px;
@@ -26,8 +25,6 @@ body {
 button , .button{
     background-color: #434967;
     position: relative;
-    top: 100px;
-    left: 400px;
     display: inline-block;
     margin: 10 10;
     -webkit-border-radius: 10px;  
