@@ -2,6 +2,11 @@ body {
     font-family: 'Roboto', sans-serif;
     background-color: #434967;
 }
+.container {
+    height: 100%;
+    width: 800px;
+    text-align: center;
+}
 #result {
     margin: 0 auto;
     display: block;
