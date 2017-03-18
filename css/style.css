@@ -24,10 +24,10 @@ body {
 #result:hover {
     cursor: pointer;
 }
-.style, .style2 {
+.style, .style2 ,.style3{
     font-family: 'Roboto', sans-serif;
 }
-button , .button{
+.button1 , .button2{
     background-color: #434967;
     position: relative;
     display: inline-block;
@@ -38,15 +38,15 @@ button , .button{
     outline: none;
     border: 0px;
 } 
-button {
+.button1 {
     -webkit-box-shadow: 
         0px 8px #A0A2A9; /* shadow */
 }
-.button {
+.button2 {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-button span , .button .span1{
+.button1 span , .button2 .span1{
     -webkit-box-shadow:
             0px -1px #fff, /* top highlight */
             0px 1px 1px #FFFFFF; /* bottom edge */
@@ -60,29 +60,29 @@ button span , .button .span1{
     font-size: 30px;
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
-button span {
+.button1 span {
     background-color: #A0A2A9;
 }
-.button .span1 {
+.button2 .span1 {
     background-color: #FC3939;
 }
-button span:hover, .button .span1:hover {
+.button1 span:hover, .button2 .span1:hover {
     color: #000000;
     text-shadow: 0px -1px #000000;
     cursor: pointer;
 }
-button:active {
+.button1:active {
     -webkit-box-shadow: 
         0px 8px #A0A2A9; /* shadow */
 }
-.button:active {
+.button2:active {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-button:active span, .button:active .span1{
+.button1:active span, .button2:active .span1{
     -webkit-transform: translate(0, 5px); /* depth of button press */
 }
-button span:after , .button .span1:after{
+.button1 span:after , .button2 .span1:after{
     display: block;    
     position: relative;  
     font-weight: 700;
