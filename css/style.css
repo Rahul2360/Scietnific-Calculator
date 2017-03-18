@@ -24,7 +24,7 @@ body {
 #result:hover {
     cursor: pointer;
 }
-.style, .style2 ,.style3{
+.style1, .style2 ,.style3{
     font-family: 'Roboto', sans-serif;
 }
 .button1 , .button2{
@@ -46,7 +46,7 @@ body {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-.button1 span , .button2 .span1{
+.button1 span , .button2 .style2{
     -webkit-box-shadow:
             0px -1px #fff, /* top highlight */
             0px 1px 1px #FFFFFF; /* bottom edge */
@@ -63,10 +63,10 @@ body {
 .button1 span {
     background-color: #A0A2A9;
 }
-.button2 .span1 {
+.button2 .style2 {
     background-color: #FC3939;
 }
-.button1 span:hover, .button2 .span1:hover {
+.button1 span:hover, .button2 .style2:hover {
     color: #000000;
     text-shadow: 0px -1px #000000;
     cursor: pointer;
@@ -79,10 +79,10 @@ body {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-.button1:active span, .button2:active .span1{
+.button1:active span, .button2:active .style2{
     -webkit-transform: translate(0, 5px); /* depth of button press */
 }
-.button1 span:after , .button2 .span1:after{
+.button1 span:after , .button2 .style2:after{
     display: block;    
     position: relative;  
     font-weight: 700;
