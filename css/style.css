@@ -4,7 +4,7 @@ body {
 }
 .container {
     height: 100%;
-    width: 800px;
+    
     text-align: center;
 }
 #result {
@@ -27,46 +27,60 @@ body {
 .style1, .style2 ,.style3{
     font-family: 'Roboto', sans-serif;
 }
-.button1 , .button2{
+.button1 , .button2 , .scientific_button{
     background-color: #434967;
     position: relative;
     display: inline-block;
-    margin: 10 10;
     -webkit-border-radius: 10px;  
     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
     padding: 0px;
     outline: none;
     border: 0px;
 } 
+.scientific_button {
+    margin: 13 6.5;
+    -webkit-box-shadow: 
+        0px 8px black;
+}
 .button1 {
+    margin: 10 10;
     -webkit-box-shadow: 
         0px 8px #A0A2A9; /* shadow */
 }
 .button2 {
+    margin: 10 10;
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-.button1 span , .button2 .style2{
+.button1 span , .button2 .style2, .scientific_button .style3 {
     -webkit-box-shadow:
             0px -1px #fff, /* top highlight */
             0px 1px 1px #FFFFFF; /* bottom edge */
     -webkit-border-radius: 10px;
     -webkit-transition: -webkit-transform .1s ease-in-out;
     display: inline-block;
-    height: 40px;
-    width: 70px;
+    
     color: #FFFFFF;
     font-weight: 700;
     font-size: 30px;
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
-.button1 span {
+.button1 .style1{
     background-color: #A0A2A9;
+    height: 40px;
+    width: 70px;
 }
 .button2 .style2 {
     background-color: #FC3939;
+    height: 40px;
+    width: 70px;
 }
-.button1 span:hover, .button2 .style2:hover {
+.scientific_button .style3 {
+    background-color: black;
+    height: 30px;
+    width: 60px;
+}
+.button1 span:hover, .button2 .style2:hover, .scientific_button .style3:hover {
     color: #000000;
     text-shadow: 0px -1px #000000;
     cursor: pointer;
@@ -79,13 +93,20 @@ body {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-.button1:active span, .button2:active .style2{
+.scientific_button:active {
+    -webkit-box-shadow: 
+        0px 8px black; /* shadow */
+}
+.button1:active span, .button2:active .style2, .scientific_button:active .style3{
     -webkit-transform: translate(0, 5px); /* depth of button press */
 }
-.button1 span:after , .button2 .style2:after{
+.button1 span:after , .button2 .style2:after, scientific_button .style3:after{
     display: block;    
     position: relative;  
     font-weight: 700;
     color: #FFFFFF;
     font-size: 24px;
+}
+.scientific_button .style3 {
+    font-size: 20px;
 }
