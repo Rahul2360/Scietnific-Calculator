@@ -61,23 +61,25 @@ body {
     
     color: #FFFFFF;
     font-weight: 700;
-    font-size: 30px;
     text-shadow: 0px 1px #fff, 0px -1px #262F33;
 }
 .button1 .style1{
     background-color: #A0A2A9;
     height: 40px;
     width: 70px;
+    font-size: 30px;
 }
 .button2 .style2 {
     background-color: #FC3939;
     height: 40px;
+    font-size: 30px;
     width: 70px;
 }
 .scientific_button .style3 {
     background-color: black;
     height: 30px;
     width: 60px;
+    font-size: 19px;
 }
 .button1 span:hover, .button2 .style2:hover{
     color: #000000;
@@ -110,7 +112,4 @@ body {
     font-weight: 700;
     color: #FFFFFF;
     font-size: 24px;
-}
-.scientific_button .style3 {
-    font-size: 20px;
 }
