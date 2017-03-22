@@ -28,10 +28,10 @@ body {
 #result:hover {
     cursor: pointer;
 }
-.style1, .style2 ,.style3{
+.style1, .style2 ,.style3 .style4{
     font-family: 'Roboto', sans-serif;
 }
-.button1 , .button2 , .scientific_button{
+.button1 , .button2 , .scientific_button,.mode_button{
     background-color: #434967;
     position: relative;
     display: inline-block;
@@ -41,6 +41,11 @@ body {
     outline: none;
     border: 0px;
 } 
+.mode_button {
+    margin: 13 6.5;
+    -webkit-box-shadow: 
+        0px 8px #A0A2A9;
+}
 .scientific_button {
     margin: 13 6.5;
     -webkit-box-shadow: 
@@ -56,7 +61,7 @@ body {
     -webkit-box-shadow: 
         0px 8px #FC3939; /* shadow */
 }
-.button1 span , .button2 .style2, .scientific_button .style3 {
+.button1 .style1 , .button2 .style2, .scientific_button .style3 ,.mode_button .style4{
     -webkit-box-shadow:
             0px -1px #fff, /* top highlight */
             0px 1px 1px #FFFFFF; /* bottom edge */
@@ -87,7 +92,14 @@ body {
     font-size: 18px;
     font-weight: 400;
 }
-.button1 span:hover, .button2 .style2:hover{
+.mode_button .style4 {
+    background-color: #A0A2A9;
+    height: 30px;
+    width: 60px;
+    font-size: 17px;
+    font-weight: 400;
+}
+.button1 .style1:hover, .button2 .style2:hover,.mode_button .style4:hover{
     color: #000000;
     text-shadow: 0px -1px #000000;
     cursor: pointer;
@@ -97,7 +109,7 @@ body {
     cursor: pointer;
     color: #A0A2A9;
 }
-.button1:active {
+.button1:active, .mode_button:active{
     -webkit-box-shadow: 
         0px 8px #A0A2A9; /* shadow */
 }
@@ -109,15 +121,22 @@ body {
     -webkit-box-shadow: 
         0px 8px black; /* shadow */
 }
-.button1:active span, .button2:active .style2, .scientific_button:active .style3{
+.button1:active span, .button2:active .style2, .scientific_button:active .style3 ,.mode_button:active .style4{
     -webkit-transform: translate(0, 5px); /* depth of button press */
 }
-.button1 span:after , .button2 .style2:after, scientific_button .style3:after{
+.button1 .style1:after , .button2 .style2:after, scientific_button .style3:after,{
     display: block;    
     position: relative;  
     font-weight: 700;
     color: #FFFFFF;
     font-size: 24px;
+}
+.mode_button .style4:active {
+    display: block;
+    position: relative;
+    font-weight: 400;
+    color: #FFFFFF;
+    font-size: 17px;
 }
 #main { 
     margin: 0 auto;
@@ -130,4 +149,24 @@ body {
 .right {
     text-align: right;
     padding-right: 7px;
+}
+.upper_left {
+    text-align: left;
+    float: left;
+}
+.upper_right {
+    text-align: right;
+}
+.circle_button {
+    background-color: #434967;
+    position: relative;
+    display: inline-block;
+    border-radius: 50%;
+     -webkit-transition: -webkit-box-shadow .1s ease-in-out;
+    padding: 0px;
+    outline: none;
+    border: 0px;    
+    margin: 10 10;
+    -webkit-box-shadow: 
+        0px 8px #A0A2A9;
 }
