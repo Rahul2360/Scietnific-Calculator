@@ -170,3 +170,38 @@ body {
     -webkit-box-shadow: 
         0px 8px #A0A2A9;
 }
+.circle_button .style5{
+    -webkit-box-shadow:
+            0px -1px #fff, /* top highlight */
+            0px 1px 1px #FFFFFF; /* bottom edge */
+    -webkit-border-radius: 50%;
+    -webkit-transition: -webkit-transform .1s ease-in-out;
+    display: inline-block;
+    color: #FFFFFF;
+    font-weight: 700;
+    text-shadow: 0px 1px #fff, 0px -1px #A0A2A9;
+    background-color: #A0A2A9;
+    height: 0px;
+    width: 143px;
+    font-size: 19px;
+    
+}
+.circle_button .style5:hover {
+    text-shadow: 0px -1px #000000;
+    cursor: pointer;
+    color: black;
+}
+.circle_button:active {
+    -webkit-box-shadow: 
+        0px 8px #A0A2A9; /* shadow */
+}
+.circle_button:active .style5{
+    -webkit-transform: translate(0, 5px); /* depth of button press */
+}
+.cirlce_button .style5:after {
+    display: block;    
+    position: relative;  
+    font-weight: 700;
+    color: #FFFFFF;
+    font-size: 24px;
+}
