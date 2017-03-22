@@ -159,7 +159,7 @@ body {
 }
 .circle_button {
     background-color: #434967;
-    position: relative;
+    position: absolute;
     display: inline-block;
     border-radius: 50%;
      -webkit-transition: -webkit-box-shadow .1s ease-in-out;
@@ -169,6 +169,8 @@ body {
     margin: 10 10;
     -webkit-box-shadow: 
         0px 8px #A0A2A9;
+    margin-left: -143px;
+    
 }
 .circle_button .style5{
     -webkit-box-shadow:
@@ -179,11 +181,12 @@ body {
     display: inline-block;
     color: #FFFFFF;
     font-weight: 700;
-    text-shadow: 0px 1px #fff, 0px -1px #A0A2A9;
     background-color: #A0A2A9;
-    height: 0px;
-    width: 143px;
+    height: 58px;
+    width: 140px;
     font-size: 19px;
+    font-weight: 400;
+    padding-top: 30px;
     
 }
 .circle_button .style5:hover {
@@ -200,8 +203,11 @@ body {
 }
 .cirlce_button .style5:after {
     display: block;    
-    position: relative;  
+    position: absolute;  
     font-weight: 700;
     color: #FFFFFF;
     font-size: 24px;
+}
+.wrapper {
+    text-align: center;
 }
